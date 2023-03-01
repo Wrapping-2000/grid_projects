@@ -1,0 +1,126 @@
+@import '~antd/es/style/themes/default.less';
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  min-height: calc(100vh - 168px);
+  /* 左侧容器 */
+
+  .left-content {
+    width: 300px;
+
+    :global {
+      // tabs title居中
+      .ant-tabs-nav-wrap {
+        justify-content: center;
+      }
+
+      // 去除背景色
+      ul.ant-menu {
+        background-color: transparent;
+      }
+
+      .ant-menu-item {
+        background-color: transparent;
+
+        &:active {
+          background-color: transparent;
+        }
+
+        &:hover {
+          color: @link-hover-color;
+        }
+
+        &::after {
+          display: none;
+        }
+      }
+
+      .ant-menu-submenu-title {
+        color: rgba(0, 0, 0, 0.85);
+      }
+
+    }
+
+
+    .link {
+      span {
+        color: @link-color !important;
+      }
+
+      &:hover {
+        span {
+          color: @link-hover-color;
+        }
+      }
+
+      &:active {
+        span {
+          color: @link-active-color;
+        }
+      }
+    }
+  }
+
+  .right-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-left: 16px;
+
+    .empty-text {
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .charts {
+      display: flex;
+      flex: 0 1 0%;
+
+      .tabs-tools {
+        position: absolute;
+        top: 14px;
+        right: 3%;
+
+        :global {
+          button {
+            line-height: normal;
+            padding: 0;
+            transform: translateY(6px);
+
+            span svg {
+              font-size: 28px;
+              line-height: 28px;
+            }
+          }
+        }
+      }
+
+      // 去除tab
+      :global {
+        .ant-tabs-nav-wrap {
+          display: none;
+        }
+      }
+    }
+  }
+}
+  .link {
+    span {
+      color: @link-color !important;
+    }
+    &:hover {
+      span {
+        color: @link-hover-color;
+      }
+    }
+    &:active {
+      span {
+        color: @link-active-color;
+      }
+    }
+  }
+

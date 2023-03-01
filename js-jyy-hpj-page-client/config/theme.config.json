@@ -1,0 +1,19 @@
+{
+  "theme": [
+    {
+      "theme": "dark",
+      "fileName": "dark.css",
+      "modifyVars": {
+        "@primary-color": "#00706A",
+        "@success-color": "red",
+        "@outline-fade": "red",
+        "@warning-color": "red"
+      }
+    }
+  ],
+  "min": true,
+  "isModule": true,
+  "ignoreAntd": false,
+  "ignoreProLayout": false,
+  "cache": false
+}

@@ -1,0 +1,86 @@
+@import '~antd/es/style/themes/default.less';
+.container {
+  .update-form {
+    :global {
+      .ant-upload-list-item-name {
+        max-width: 280px;
+      }
+    }
+  }
+
+  div.search {
+    padding-left: 14px;
+    padding-right: 14px;
+    :global {
+      .ant-col-3 {
+        flex: 0 0 14.2%;
+        max-width: 14.2%;
+      }
+      .ant-col-offset-3 {
+        margin-left: 0%;
+      }
+    }
+  }
+}
+  .link {
+    span {
+      color: @link-color!important;
+
+      &:hover {
+        color: @link-hover-color!important;
+      }
+      &:active {
+        color: @link-active-color!important;
+      }
+    }
+  }
+
+.drawer {
+  .search {
+    padding-left: 6px;
+  }
+
+  .update-form-button {
+  }
+
+  :global {
+    .ant-drawer-header {
+      flex-direction: row-reverse;
+      padding: 12px 24px;
+    }
+  }
+
+  .header-info {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin: 0 -24px 24px -24px;
+    padding: 16px 24px;
+    background: #fff;
+    div:first-child {
+      display: flex;
+      flex: 1;
+      justify-content: space-between;
+      align-items: center;
+      span:first-child {
+        font-size: 20px;
+        color: rgba(0,0,0,0.85);
+        font-weight: 600;
+      }
+      span:last-child {
+        font-size: 16px;
+        color: rgba(0,0,0,0.65);
+        font-weight: 600;
+      }
+    }
+  }
+
+  .tag {
+    background-color: @tag-default-bg;
+  }
+}
+
+
+
+
+

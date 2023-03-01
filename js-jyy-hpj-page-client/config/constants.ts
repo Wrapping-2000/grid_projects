@@ -1,0 +1,6 @@
+export const DEVELOPMENT_HOST = '192.168.2.123';
+// export const DEVELOPMENT_PORT = '80';
+// const DEVELOPMENT_HOST = '10.40.95.233'; // 本地
+const DEVELOPMENT_PORT = '8070';
+export const DEVELOPMENT_URL = `http://${DEVELOPMENT_HOST}:${DEVELOPMENT_PORT}`;
+// export const DEVELOPMENT_URL_Z = `http://${DEVELOPMENT_HOST_Z}:${DEVELOPMENT_PORT_Z}`;

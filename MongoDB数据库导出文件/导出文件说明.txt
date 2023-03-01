@@ -1,0 +1,5 @@
+1.导出文件使用MongoDB官方工具，使用mongodump --host=localhost --port=27017 --db=post_project --username=root --password=iflytek.COM --authenticationDatabase=admin -o . --gzip导出，使用mongorestore命令恢复
+
+2.导出文件中包含2019、2020、2021三年的电网评价数据
+
+mongorestore -h 127.0.0.1:27017 -d post_project D:\MongoDB\Server\4.4\bin\Mongodump\post_project

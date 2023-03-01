@@ -1,0 +1,1 @@
+OPERATES = ["SUM", "AVERAGE", "VAR", "STAND"]

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>折线图</title>
+    <g id="输出" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="电网评价-评价对比(饼、环)" transform="translate(-152.000000, -383.000000)">
+            <g id="编组-5" transform="translate(112.000000, 359.000000)">
+                <g id="折线图" transform="translate(40.000000, 24.000000)">
+                    <rect id="矩形" x="0" y="0" width="64" height="64"></rect>
+                    <polygon id="路径" fill="#00706A" fill-rule="nonzero" points="8 56 8 41.4 21.4 31.4 30.4 44.4 30.6 44.4 33.8 42.2 56.8 25.8 54.4 22.4 31.4 38.8 24.6 29 22.2 25.8 8 36.6 8 4 4 4 4 60 60 60 60 56"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

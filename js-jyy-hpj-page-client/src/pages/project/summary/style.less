@@ -1,0 +1,176 @@
+@import '~antd/es/style/themes/default.less';
+
+.drawer {
+  .search {
+    padding-left: 6px;
+  }
+
+  .update-form-button {
+  }
+
+  :global {
+    .ant-drawer-header {
+      flex-direction: row-reverse;
+      padding: 12px 24px;
+    }
+  }
+
+  .header-info {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin: 0 -24px 24px -24px;
+    padding: 16px 24px;
+    background: #fff;
+    div:first-child {
+      display: flex;
+      flex: 1;
+      justify-content: space-between;
+      align-items: center;
+      span:first-child {
+        font-size: 20px;
+        color: rgba(0,0,0,0.85);
+        font-weight: 600;
+      }
+      span:last-child {
+        font-size: 16px;
+        color: rgba(0,0,0,0.65);
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.update-form {
+  :global {
+    .ant-upload-list-item-name {
+      max-width: 280px;
+    }
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  min-height: calc(100vh - 168px);
+  /* 左侧容器 */
+  .left-content {
+    width: 30%;
+    min-width: 300px;
+    max-width: 500px;
+    :global {
+      // tabs title居中
+      .ant-tabs-nav-wrap {
+        justify-content: center;
+      }
+      // 去除背景色
+      ul.ant-menu {
+        background-color: transparent;
+      }
+      .ant-menu-item {
+        background-color: transparent;
+        &:active {
+          background-color: transparent;
+        }
+        &:hover {
+          color: @link-hover-color;
+        }
+        &::after {
+          display: none;
+        }
+      }
+      .ant-menu-submenu-title {
+        color: rgba(0,0,0,0.85);
+      }
+      // 三级选中
+      .ant-menu-item-selected {
+        background-color: transparent;
+        color: @link-hover-color;
+      }
+    }
+    .submenu-lv0 {
+      :global {
+        .ant-menu-submenu-title {
+          font-weight: 600;
+          color: rgba(0,0,0,0.85);
+          background-color: transparent;
+        }
+        .ant-menu-submenu-arrow {
+          left: 10px;
+          color: rgba(0,0,0,0.65);
+        }
+      }
+    }
+    .submenu-lv1 {
+      :global {
+        .ant-menu-submenu-title {
+          font-weight: unset;
+          color: rgba(0,0,0,0.85);
+          background-color: transparent;
+        }
+        .ant-menu-submenu-arrow {
+          left: 32px;
+          color: rgba(0,0,0,0.65);
+        }
+      }
+    }
+  }
+
+  .right-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-left: 16px;
+    .empty-text {
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+    }
+    .charts {
+      display: flex;
+      flex: 0 1 0%;
+      .tabs-tools {
+        position: absolute;
+        top: 14px;
+        right: 3%;
+        :global {
+          button {
+            line-height: normal;
+            padding: 0;
+            transform: translateY(6px);
+            span svg {
+              font-size: 28px;
+              line-height: 28px;
+            }
+          }
+        }
+      }
+
+      // 去除tab
+      :global {
+        .ant-tabs-nav-wrap {
+          display: none;
+        }
+      }
+    }
+  }
+  .link {
+    span {
+      color: @link-color !important;
+    }
+    &:hover {
+      span {
+        color: @link-hover-color;
+      }
+    }
+    &:active {
+      span {
+        color: @link-active-color;
+      }
+    }
+  }
+}
+
+

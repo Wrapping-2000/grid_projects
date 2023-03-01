@@ -1,0 +1,320 @@
+@import '../../../../node_modules/antd/es/style/themes/default.less';
+.index-selection-content {
+  display: flex;
+  flex: 1;
+  .index-selection-left {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 0 20px;
+    background: #fff;
+    .ant-tabs {
+      flex: 1;
+
+      .ant-tabs-nav-list {
+        padding-left: 20px;
+      }
+
+      .ant-tabs-content-holder {
+        display: flex;
+        flex: 1;
+      }
+    }
+
+    .china-economy-container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: 100%;
+      padding: 0 20px;
+
+      .box-left {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        padding-bottom: 20px;
+        overflow: auto;
+
+        .china-economy-title {
+          display: flex;
+          align-items: center;
+          padding: 10px 0;
+        }
+
+        .china-economy-search {
+          background-color: transparent;
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+
+          .china-menu-wrap {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            background: rgba(0, 0, 0, 0.02);
+            .china-menu-box {
+              max-height: 62vh;
+              overflow-y: auto;
+              overflow-x: hidden;
+             .ant-menu-root.ant-menu-inline {
+                box-shadow: none;
+                background: transparent;
+            }
+              // .ant-menu {
+              //   flex: 1;
+              //   // background: rgba(89, 112, 221, 0.04) !important;
+
+              //   .ant-menu-item {
+              //     display: flex;
+              //     align-items: center;
+              //     justify-content: space-between;
+              //     padding-left: 35px !important;
+              //     background: none;
+
+              //     .item-div {
+              //       width: 92%;
+              //       overflow: hidden;
+              //       white-space: nowrap;
+              //       text-overflow: ellipsis;
+              //     }
+              //   }
+
+              //   .ant-menu-item-selected {
+              //     border-right: none !important;
+              //   }
+
+              //   .ant-menu-item::after {
+              //     transform: scaleY(0) !important;
+              //     opacity: none !important;
+              //   }
+              // }
+            }
+          }
+        }
+      }
+
+      .box-right {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        min-height: 74vh;
+        max-height: 74vh;
+        margin-left: 15px;
+        padding-bottom: 20px;
+        overflow: auto;
+
+        .china-economy-title {
+          display: flex;
+          align-items: center;
+          padding: 10px 0;
+        }
+
+        .right-container {
+          display: flex;
+          flex: 1;
+          flex-direction: column;
+          padding: 0 15px;
+          overflow: auto;
+          border: 1px solid #d9d9d9;
+
+          .index-title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+
+            .ant-select-selection-item {
+              padding-right: 30px !important;
+            }
+          }
+
+          .index-content {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            padding: 15px 0;
+
+            .ant-checkbox-wrapper {
+              margin-left: none;
+            }
+
+            // 选中表格
+
+            .ant-checkbox-group {
+              display: flex;
+              flex-wrap: wrap;
+              // justify-content: space-between;
+
+              .ant-checkbox-group-item {
+                width: 45%;
+                padding: 7px 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .index-selection-right {
+    display: flex;
+    flex: 1;
+    border-radius: 5px;
+    // padding: 10px 30px;
+    background: #fff;
+    flex-direction: column;
+    max-height: 82vh;
+    // background: #15192D;
+    margin-left: 15px;
+    padding: 20px 20px;
+    .selection-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .selection-b {
+        // color: rgba(255,255,255,0.85);
+      }
+    }
+
+    .selection-container {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      margin-top: 20px;
+      overflow: auto;
+      border: 1px solid #d9d9d9;
+
+      .selection-box {
+        display: flex;
+        padding: 10px 15px;
+        .selection-all {
+          align-items: center;
+          .selection-delete {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 30px;
+            color: #b3aaaa;
+            font-weight: 600;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .submenu-lv0 {
+    :global {
+      .ant-menu-submenu-title {
+        font-weight: 600;
+        color: rgba(0,0,0,0.85);
+        background-color: transparent;
+      }
+      .ant-menu-submenu-arrow {
+        left: 10px;
+        color: rgba(0,0,0,0.65);
+      }
+    }
+  }
+  .submenu-lv1 {
+    :global {
+      .ant-menu-submenu-title {
+        font-weight: unset;
+        color: rgba(0,0,0,0.85);
+        background-color: transparent;
+      }
+      .ant-menu-submenu-arrow {
+        left: 32px;
+        color: rgba(0,0,0,0.65);
+      }
+    }
+  }
+    // 选中表格
+    :global {
+      .ant-menu-root.ant-menu-inline {
+        box-shadow: none;
+        background: transparent;
+        border-right: none;
+        padding-top: 20px;
+    }
+.ant-menu-submenu-inline .ant-menu-submenu-selected {
+  &:hover {
+    // color: rgba(0,0,0,0.85) !important;
+    color: #40A9FF !important;
+  }
+}
+
+    .ant-menu-item {
+      background-color: transparent;
+      &:active {
+        background-color: transparent;
+      }
+      &:hover {
+        // color: rgba(0,0,0,0.85) !important;
+        color: #40A9FF !important;
+      }
+      &::after {
+        display: none;
+      }
+    }
+    .ant-menu-submenu-title {
+      color: rgba(0,0,0,0.85);
+      &:hover {
+        // color: rgba(0,0,0,0.85) !important;
+        color: #40A9FF !important;
+      }
+      .ant-menu-submenu-arrow {
+        &:hover {
+          // color: rgba(0,0,0,0.85) !important;
+           color: #40A9FF !important;
+        }
+      }
+    }
+    .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+      background-color: transparent;
+  }
+    // 三级选中
+    .ant-menu-item-selected {
+      background-color: transparent;
+      color: @link-hover-color;
+    }
+
+      .ant-checkbox-group-item {
+        display: flex;
+        margin: 20px 0;
+      }
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 10px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgba(0, 112, 106, 0.06);
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+      }
+      ::-webkit-scrollbar-track {
+        background: rgba(42, 253, 154, 0.15);
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+      }
+      ::-webkit-scrollbar-corner {
+        background-color: transparent;
+      }
+    }
+    .link {
+      span {
+        color: @link-color !important;
+      }
+      &:hover {
+        span {
+          color: @link-hover-color;
+        }
+      }
+      &:active {
+        span {
+          color: @link-active-color;
+        }
+      }
+    }
+}
